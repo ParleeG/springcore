@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="com.springcore.constructor.Personality" name="personality1" c:nickname="Sultan" c:hobby="Sbse Bda Aadmi Banna" c:achievments="KGF"/>
+<bean class="com.springcore.constructor.Person" name="person1" c:name="Rocky Bhai" c:noOfResidence="2" c:personality-ref="personality1"/>
+
+	<!-- <bean class="com.springcore.constructor.Personality"
+		name="personality1">
+		<constructor-arg value="Sultan" />
+		<constructor-arg value="Sbse Bda Aadmi Banna" />
+		<constructor-arg value="KGF" />
+
+	</bean>
+
+	<bean class="com.springcore.constructor.Person" name="person1">
+		<constructor-arg value="Rocky Bhai" />
+		<constructor-arg value="2" type="int" />
+		<constructor-arg ref="personality1" type="Personality" />
+	</bean> -->
+</beans>
