@@ -10,6 +10,7 @@ public class App {
 		ApplicationContext context= new ClassPathXmlApplicationContext("com/springcore/constructor/constructor_config.xml");
 		Person p=(Person) context.getBean("person1");
 		System.out.println(p);
+		Addition a=(Addition)context.getBean("add");
 
 	}
 

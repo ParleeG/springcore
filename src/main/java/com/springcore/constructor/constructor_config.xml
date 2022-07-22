@@ -9,7 +9,10 @@
 
 <bean class="com.springcore.constructor.Personality" name="personality1" c:nickname="Sultan" c:hobby="Sbse Bda Aadmi Banna" c:achievments="KGF"/>
 <bean class="com.springcore.constructor.Person" name="person1" c:name="Rocky Bhai" c:noOfResidence="2" c:personality-ref="personality1"/>
-
+<bean class="com.springcore.constructor.Addition" name="add">
+<constructor-arg value="20" type="int"/>
+<constructor-arg value="30" type="int"/> 
+</bean>
 	<!-- <bean class="com.springcore.constructor.Personality"
 		name="personality1">
 		<constructor-arg value="Sultan" />
