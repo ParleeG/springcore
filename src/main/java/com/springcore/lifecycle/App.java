@@ -13,12 +13,14 @@ public class App {
 		AbstractApplicationContext context=new ClassPathXmlApplicationContext("com/springcore/lifecycle/lifecycle_config.xml");
 		Samosa s= (Samosa)context.getBean("samosa1");
 		//registerShutdownHook is the method calling during bean destroying
+//		System.out.println(s);
+//		System.out.println(s);
+//		System.out.println(s);
+//		System.out.println(s);
+//		System.out.println(s);
+		Example ex=(Example)context.getBean("ex");
 		context.registerShutdownHook();
-		System.out.println(s);
-		System.out.println(s);
-		System.out.println(s);
-		System.out.println(s);
-		System.out.println(s);
+		
 	}
 
 }

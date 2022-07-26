@@ -6,7 +6,11 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  https://www.springframework.org/schema/beans/spring-beans.xsd">
  
- <bean class="com.springcore.lifecycle.Samosa" name="samosa1" init-method="init" destroy-method="destroy">
- <property name="price" value="10"/>
- </bean>
- </beans>
+	<bean class="com.springcore.lifecycle.Samosa" name="samosa1"
+		init-method="init" destroy-method="destroy">
+		<property name="price" value="10" />
+	</bean>
+	<bean class="com.springcore.lifecycle.Example" name="ex">
+		<property name="digit" value="10" />
+	</bean>
+</beans>
